@@ -8,7 +8,7 @@ const music=document.getElementById("music");
 const musicBtn=document.getElementById("musicBtn");
 
 function showImage(file){
-  portrait.src="assets/"+file;
+  portrait.src=file;
   portrait.classList.remove("hidden");
 }
 function hideImage(){portrait.classList.add("hidden")}
