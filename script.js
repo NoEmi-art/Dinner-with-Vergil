@@ -44,14 +44,18 @@ function male(){
   buttons([["Yes",yesEnding],["No",noEnding]]);
 }
 function noEnding(){
-  showImage("vergil_smile.webp");
-  setText("...");
-  endButton();
+    clearButtons();
+    showImage("vergil_smile.webp");
+    setText("You Are not a Descendent of Sparda, Vergil is Proud");
+    endButton();
 }
+
 function yesEnding(){
-  showImage("vergil_end.webp");
-  setText("You Shall Die");
-  endButton();
+    clearButtons();
+    showImage("vergil_end.webp");
+    setText("You Are a Descendent of Sparda, Vergil is ready to be a parent");
+    endButton();
+
 }
 function endButton(){
   const b=document.createElement("button");
