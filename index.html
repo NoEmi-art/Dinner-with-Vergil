@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#08090d">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Dinner with Vergil</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="game">
+  <div id="title">DINNER WITH VERGIL</div>
+  <div id="scene" class="hidden">
+    <img id="portrait" alt="Vergil" class="hidden">
+    <div id="text"></div>
+    <div id="choices"></div>
+    <button id="musicBtn" class="small">♫ Music</button>
+  </div>
+  <button id="startBtn">START</button>
+</div>
+<audio id="music" loop preload="auto">
+  <source src="assets/bury_the_light.ogg" type="audio/ogg">
+</audio>
+<script src="script.js"></script>
+</body>
+</html>

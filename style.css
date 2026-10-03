@@ -1,0 +1,14 @@
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#08090d;color:#eee;font-family:Georgia,serif}
+body{display:flex;justify-content:center;align-items:center;min-height:100vh}
+#game{width:min(100%,720px);min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:22px;background:radial-gradient(circle at 50% 35%,#20232d 0,#0d0f15 45%,#050608 100%)}
+#title{font-size:clamp(30px,9vw,68px);letter-spacing:.08em;text-align:center;font-weight:bold;text-shadow:0 0 18px #7f89b8;margin-bottom:30px}
+#scene{width:100%;display:flex;flex-direction:column;align-items:center}
+#portrait{max-width:92%;max-height:62vh;object-fit:contain;border-radius:8px;box-shadow:0 10px 40px #000}
+#text{width:100%;margin-top:18px;padding:16px 18px;background:rgba(0,0,0,.72);border:1px solid #777b91;border-radius:10px;font-size:clamp(18px,5vw,25px);line-height:1.4;min-height:64px}
+#choices{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;width:100%;margin-top:14px}
+button{font:inherit;font-weight:bold;color:#fff;background:#171a24;border:1px solid #aeb5d6;border-radius:9px;padding:12px 22px;cursor:pointer;min-width:120px}
+button:active{transform:scale(.97);background:#2b3042}
+#startBtn{font-size:22px;padding:14px 40px}
+.small{margin-top:12px;font-size:14px;min-width:auto;padding:8px 14px;opacity:.85}
+.hidden{display:none!important}
